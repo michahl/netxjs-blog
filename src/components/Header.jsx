@@ -2,7 +2,7 @@ import { LuSunMedium } from "react-icons/lu";
 
 const Header = () => {
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 pt-10 pb-5 backdrop-blur-sm">
+    <nav className="fixed top-0 left-0 w-full z-50 pt-5 pb-5 backdrop-blur-sm bg-white/90">
         <div className="max-w-2xl mx-auto">
             <div className="flex justify-end">
                 <div className="flex items-center gap-5">
