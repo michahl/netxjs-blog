@@ -47,7 +47,10 @@ const App = () => {
                 }
               </div>
             </div>
-            <div className='py-10'>
+            <div className='mb-3'>
+              <a href="mailto:contact@michahl.com" className='text-sm text-blue-900/60 hover:text-blue-900/80 hover:underline'>Contact via email</a>
+            </div>
+            <div className='py-3 mb-10'>
               <div className='bg-gray-100 rounded-md px-8 pt-10 pb-7'>
                 <h2 className='text-lg font-semibold mb-7'>Join the newsletter!</h2>
 
