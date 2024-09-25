@@ -4,6 +4,7 @@ import Header from './components/Header'
 import { FaArrowRight } from "react-icons/fa"
 import { FaArrowRightLong } from "react-icons/fa6"
 import { blog } from './assets'
+import Newsletter from './components/Newsletter'
 
 const App = () => {
   return (
@@ -50,17 +51,7 @@ const App = () => {
             <div className='mb-3'>
               <a href="mailto:contact@michahl.com" className='text-sm text-blue-900/60 hover:text-blue-900/80 hover:underline'>Contact via email</a>
             </div>
-            <div className='py-3 mb-10'>
-              <div className='bg-gray-100 rounded-md px-8 pt-10 pb-7'>
-                <h2 className='text-lg font-semibold mb-7'>Join the newsletter!</h2>
-
-                <form className='flex flex-col gap-2'>
-                  <input type="email" name="email" id="email" className='ring-1 ring-gray-300/80 rounded-md py-1 px-2' placeholder='Email address' required />
-                  <input type="text" name='name' id='name' className='ring-1 ring-gray-300/80 rounded-md py-1 px-2' placeholder='First Name' required />
-                  <button type='submit' className='bg-black w-full text-white py-1.5 rounded-md mt-2.5'>Subscribe</button>
-                </form>
-              </div>
-            </div>
+            <Newsletter />
             <Footer />
           </div>
         </div>
