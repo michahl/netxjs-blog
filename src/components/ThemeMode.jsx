@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
-import { BsFillMoonStarsFill } from "react-icons/bs"
-import { LuSunMedium } from 'react-icons/lu'
+import { LuSunMedium, LuMoonStar } from 'react-icons/lu'
 
 const ThemeMode = () => {
   const [dark, setDark] = useState(false)
@@ -24,7 +23,7 @@ const ThemeMode = () => {
         aria-label="switch theme mode"
     >
         { 
-            dark ? <BsFillMoonStarsFill /> : <LuSunMedium />
+            dark ? <LuMoonStar /> : <LuSunMedium />
         }
     </button>
   )
