@@ -1,4 +1,5 @@
 import { LuSunMedium } from "react-icons/lu";
+import ThemeMode from "./ThemeMode";
 
 const Header = () => {
   return (
@@ -13,9 +14,7 @@ const Header = () => {
                         <a href="/about" className="text-sm hover:text-gray-800">About</a>
                     </div>
                     <div className="md:h-5 md:w-px md:bg-zinc-900/10"></div>
-                    <button className="h-6 w-6 flex items-center justify-center rounded-sm hover:text-gray-800" aria-label="switch theme mode">
-                        <LuSunMedium />
-                    </button>
+                    <ThemeMode />
                 </div>
             </div>
         </div>
