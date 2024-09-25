@@ -3,5 +3,7 @@
 @tailwind utilities;
 
 body {
-    @apply bg-white/90 dark:bg-zinc-950/95 dark:text-white/90;
+    @apply bg-white/90 dark:bg-zinc-950/95;
+    @apply dark:text-white/90;
+    @apply selection:bg-slate-700 selection:text-white;
 }
