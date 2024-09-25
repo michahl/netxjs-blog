@@ -27,7 +27,7 @@ const Tags = () => {
                     <a
                       key={tag} 
                       href={`/tags/${tag}`}
-                      className='font-light border rounded-full py-0.5 px-2.5 text-[0.9rem] hover:bg-gray-100/35'
+                      className='font-light border rounded-full py-0.5 px-2.5 text-[0.9rem] hover:bg-gray-100/35 dark:hover:bg-zinc-800/50 dark:border-gray-50/20 dark:text-white/60 dark:hover:text-white/85'
                     >
                       {tag}
                     </a>

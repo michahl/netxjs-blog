@@ -5,17 +5,30 @@ import { IoMoonOutline } from "react-icons/io5"
 const ThemeMode = () => {
   const [dark, setDark] = useState(false)
 
-  const hook = () => {
+  useEffect(() => {
     const preference = localStorage.getItem('darkMode') === 'true'
     setDark(preference)
-    if (preference) document.body.classList.add('dark')
-  }
-  useEffect(hook, [])
+
+    if (preference) {
+      document.body.classList.add('dark')
+    } else {
+      document.body.classList.remove('dark')
+    }
+  }, [])
 
   const handleMode = () => {
-    setDark(!dark)
-    document.body.classList.toggle('dark')
-    localStorage.setItem('darkMode', !dark)
+    setDark(prevMode => {
+      const newMode = !prevMode
+
+      localStorage.setItem('darkMode', newMode)
+
+      if(newMode) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+      return newMode
+    })
   }
   return (
     <button 

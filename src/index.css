@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-    @apply bg-white dark:bg-zinc-950/90
+body {
+    @apply bg-white/90 dark:bg-zinc-950/95 dark:text-white/90;
 }

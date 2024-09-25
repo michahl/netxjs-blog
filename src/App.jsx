@@ -8,7 +8,7 @@ import { blog } from './assets'
 
 const App = () => {
   return (
-    <div className='w-full flex flex-col justify-center items-center min-h-screen dark:bg-zinc-950/95 dark:text-white/90'>
+    <div className='w-full flex flex-col justify-center items-center min-h-screen'>
       <div className='w-full max-w-2xl'>
         <div className='mx-10 lg:mx-0'>
           <div className='flex flex-col min-h-screen'>
