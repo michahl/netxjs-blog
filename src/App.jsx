@@ -39,7 +39,7 @@ const App = () => {
                           <h3 className='font-medium'>{post.title}</h3>
                           <p className='text-gray-600/80 font-light'>{post.shortDes}</p>
                         </div>
-                        <a href="" className='text-blue-900/55 hover:text-blue-900/70 flex flex-row items-center gap-3'>
+                        <a href={`/blog/${post.url}`} className='text-blue-900/55 hover:text-blue-900/70 flex flex-row items-center gap-3'>
                           <span>Read more</span>
                           <FaArrowRightLong />
                         </a>
