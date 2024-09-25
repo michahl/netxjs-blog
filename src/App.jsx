@@ -31,7 +31,7 @@ const App = () => {
 
             <div className='mb-3'>
               <h2 className='w-full border-b pb-3 font-medium'>Recent posts</h2>
-              <div className='py-7 grid grid-cols-2 border-b'>
+              <div className='py-7 grid grid-cols-2 border-b gap-3'>
                 {
                   blog.map((post) => (
                     <div key={post.title} className='text-sm max-w-60 flex flex-col gap-4 pb-5'>
