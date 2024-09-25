@@ -2,7 +2,7 @@ import ThemeMode from "./ThemeMode";
 
 const Header = () => {
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 px-5 pt-5 pb-5 backdrop-blur-sm bg-white/90 dark:bg-zinc-950/10">
+    <nav className="fixed top-0 left-0 w-full z-50 px-5 pt-5 pb-5 backdrop-blur-sm bg-white/90 dark:bg-transparent">
         <div className="max-w-2xl mx-auto">
             <div className="flex justify-end">
                 <div className="flex items-center gap-5">

@@ -15,7 +15,7 @@ const App = () => {
             <Header />
             <div className='flex-grow'>
               <div className='mt-20 mb-10'>
-                <h2 className='text-xl font-semibold mb-2.5'>michahl/blog</h2>
+                <h2 className='text-xl font-semibold mb-2.5'>michahl ~ blog</h2>
                 <p className='text-sm font-light mb-5'>Welcome to my personal &apos;weekly&apos; blog where I share thinks.</p>
 
                 <div className='flex flex-row gap-3 items-center'>

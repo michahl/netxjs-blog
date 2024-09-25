@@ -4,7 +4,8 @@ export const blog = [
         url: 'swiftui-markdown-text',
         shortDes: 'Rendering markdown in a SwiftUI Text view is supported by default',
         tags: ['one', 'two'],
-        date: 'Sep 15, 2024'
+        date: 'Sep 15, 2024',
+        file: './posts/1.md'
     },
     {
         title: 'How to parse Frontmatter data in a Next MDX Blog',
