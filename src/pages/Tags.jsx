@@ -24,7 +24,8 @@ const Tags = () => {
                 <div className='mt-5 flex flex-wrap items-center gap-1.5'>
                 {
                   tags.map(tag => (
-                    <a 
+                    <a
+                      key={tag} 
                       href={`/tags/${tag}`}
                       className='border rounded-full py-0.5 px-2 text-[0.9rem] hover:bg-gray-100/35'
                     >

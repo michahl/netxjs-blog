@@ -25,6 +25,7 @@ const Blog = () => {
                               {
                                 post.tags.map((tag) => (
                                   <a 
+                                    key={tag}
                                     href={`/tags/${tag}`}
                                     className="border rounded-full py-0.5 px-2 text-xs hover:bg-gray-100/35"
                                   >
