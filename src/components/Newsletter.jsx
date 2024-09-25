@@ -38,9 +38,12 @@ const Newsletter = () => {
                 setEmail('')
                 setName('')
             }
-            setTimeout(setSuccess(true), 1000)
+            setSuccess(true)
+            setTimeout(() => setSuccess(false), 2500)
         })
     } catch (e) {
+        setError(true)
+        setTimeout(() => setError(false), 2500)
         console.log(e)
     }
   }

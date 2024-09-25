@@ -1,10 +1,10 @@
 import Footer from './components/Footer'
 import Header from './components/Header'
+import Newsletter from './components/Newsletter'
 
 import { FaArrowRight } from "react-icons/fa"
 import { FaArrowRightLong } from "react-icons/fa6"
 import { blog } from './assets'
-import Newsletter from './components/Newsletter'
 
 const App = () => {
   return (
@@ -16,7 +16,7 @@ const App = () => {
 
             <div className='mt-20 mb-10'>
               <h2 className='text-xl font-semibold mb-2.5'>michahl/blog</h2>
-              <p className='text-sm font-light mb-5'>Welcome to my personal 'weekly' blog where I share thinks.</p>
+              <p className='text-sm font-light mb-5'>Welcome to my personal &apos;weekly&apos; blog where I share thinks.</p>
 
               <div className='flex flex-row gap-3 items-center'>
                 <a href="/blog" className='flex flex-row items-center justify-center gap-2 bg-black border-black hover:bg-black/85 rounded-full text-white font-light text-sm py-1.5 px-3'>

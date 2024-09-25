@@ -1,4 +1,3 @@
-import { LuSunMedium } from "react-icons/lu";
 import ThemeMode from "./ThemeMode";
 
 const Header = () => {
