@@ -19,11 +19,11 @@ const App = () => {
                 <p className='text-sm font-light mb-5'>Welcome to my personal &apos;weekly&apos; blog where I share thinks.</p>
 
                 <div className='flex flex-row gap-3 items-center'>
-                  <a href="/blog" className='flex flex-row items-center justify-center gap-2 bg-black border border-black hover:bg-black/85 dark:bg-gray-700/30 dark:text-white/50 dark:hover:text-white/70 dark:border-gray-500/80 rounded-full text-white font-light text-sm py-1.5 px-3'>
+                  <a href="/blog" className='flex flex-row items-center justify-center gap-2 bg-black border border-black hover:bg-black/85 dark:bg-gray-700/30 dark:text-white/50 dark:hover:text-white/70 dark:border-gray-500/80 rounded-full text-white font-light text-sm py-1 px-3'>
                     <span>View posts</span>
                     <FaArrowRight className='h-2.5 w-2.5' />
                   </a>
-                  <a href="/tags"  className='flex flex-row items-center justify-center gap-2 border rounded-full text-gray-600 hover:text-gray-800 hover:bg-gray-100/20 dark:hover:bg-zinc-800/50 dark:border-gray-50/20 dark:text-white/60 dark:hover:text-white/85 font-light text-sm py-1.5 px-3'>
+                  <a href="/tags"  className='flex flex-row items-center justify-center gap-2 border rounded-full text-gray-600 hover:text-gray-800 hover:bg-gray-100/20 dark:hover:bg-zinc-800/50 dark:border-gray-50/20 dark:text-white/60 dark:hover:text-white/85 font-light text-sm py-1 px-3'>
                     <span>Explore topics</span>
                   </a>
                 </div>
