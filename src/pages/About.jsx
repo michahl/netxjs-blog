@@ -13,7 +13,7 @@ const About = () => {
               <div className='mb-3'>
                 <h2 className='text-2xl w-full font-semibold'>About</h2>
 
-                <p className="mt-3 text-sm text-gray-800/90 dark:text-gray-400/75 font-light">Hi, I'm Michail Christoforatos, a software developer based in Sparti, Greece</p>
+                <p className="mt-3 text-sm text-gray-800/90 dark:text-gray-400/75 font-light">Hi, I&rsquo;m Michail, a developer from Greece</p>
 
                 <div className="mt-16 space-y-20">
                   <div className="">

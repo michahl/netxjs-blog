@@ -1,24 +1,11 @@
 export const blog = [
     {
-        title: 'SwiftUI Markdown Text',
-        url: 'swiftui-markdown-text',
-        shortDes: 'Rendering markdown in a SwiftUI Text view is supported by default',
-        tags: ['one', 'two'],
-        date: 'Sep 15, 2024',
-        file: './posts/1.md'
+        title: 'Some Context',
+        url: 'some-context',
+        shortDes: 'Hi, thanks for stopping by! This is the very first post on this blog.',
+        tags: ['general'],
+        date: 'Sep 26, 2024',
+        file: 'posts/some-context.mdx'
     },
-    {
-        title: 'How to parse Frontmatter data in a Next MDX Blog',
-        url: 'how-to-parse-frontmatter-data-in-a-next-mdx-blog',
-        shortDes: 'In this article, I show how to retrieve metadata information from blogposts written with MDX',
-        tags: ['dreamscape', 'blog'],
-        date: 'Sep 15, 2024'
-    },
-    {
-        title: 'SwiftUI Text with Clickable Links',
-        url: 'swiftui-text-with-clickable-links',
-        shortDes: 'In this article, I will show you how to create a custom SwiftUI component that finds and makes any links clickable inside the given text input.',
-        tags: ['one', 'two'],
-        date: 'Sep 15, 2024'
-    }
 ]
+  

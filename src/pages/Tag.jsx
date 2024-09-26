@@ -14,7 +14,7 @@ const Tag = () => {
   useEffect(() => {
     const p = blog.filter(post => post.tags.includes(tag))
     setPosts(p)
-  }, [])
+  }, [tag])
 
   return (
     <div className='w-full flex flex-col justify-center items-center min-h-screen'>
@@ -60,7 +60,7 @@ const Tag = () => {
                     ) : (
                       <div className="mt-5">
                         <h2 className='text-xl w-full font-semibold'>Oops!</h2>
-                        <p className="mt-3.5 text-sm font-light text-gray-700/85 dark:text-gray-200/50">I haven't written anything about that.</p>
+                        <p className="mt-3.5 text-sm font-light text-gray-700/85 dark:text-gray-200/50">I haven&rsquo;t written anything about that.</p>
                       </div>
                     )
                   }
