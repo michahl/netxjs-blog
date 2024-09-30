@@ -14,7 +14,7 @@ const Post = () => {
   useEffect(() => {
     const p = blog.filter(post => post.url === url)
     setPost(p)
-  })
+  }, [])
 
   return (
     <div className='w-full flex flex-col justify-center items-center min-h-screen'>

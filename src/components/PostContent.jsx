@@ -11,8 +11,6 @@ const PostContent = () => {
   useEffect(() => {
     const post = blog.find(post => post.url === url)
 
-    console.log(post.file)
-
     if (post) {
         fetch(`/${post.file}`)
             .then(response => {
@@ -24,7 +22,7 @@ const PostContent = () => {
             })
             .catch(e => console.error('Error fetching data', e))
     }
-  })
+  }, [])
   return (
     <BlogBody>
         <ReactMarkdown>{markdownContent}</ReactMarkdown>
