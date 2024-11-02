@@ -2,33 +2,23 @@ import Menu from "@/components/menu";
 import { Button } from "@/components/ui/button";
 import { Github, Twitter } from "lucide-react";
 import Link from "next/link";
+import { getAllPosts } from "@/lib/posts";
+import Header from "@/components/header";
+import { Badge } from "@/components/ui/badge";
+import { Icons } from "@/components/icons";
 
 export default function Home() {
+  const posts = getAllPosts();
+
   return (
     <div className="flex justify-center min-h-screen">
       <div className="max-w-2xl w-full mx-2 sm:mx-5 relative">
         <div className="my-12">
 
           {/* heading */}
-          <div className="flex justify-between items-center">
-            <h1 className="font-medium">FirstName LastName</h1>
-            <div className="flex gap-1.5 items-center">
-              <Link 
-                href="/"
-                target="_blank"
-              >
-                <Github className="w-5 h-5" />
-              </Link>
-              <Link 
-                href="/"
-                target="_blank"
-              >
-                <Twitter className="w-5 h-5" />
-              </Link>
-            </div>
-          </div>
+          <Header />
           
-          <div className="my-10">
+          <div className="my-8">
             <p>
               Nextjs starter template for next blog or personal website. Built with:
             </p>
@@ -39,24 +29,48 @@ export default function Home() {
             </ul>
             <Button className="my-1.5">
               <Link href="/" target="_blank" className="flex items-center justify-center gap-1 font-medium">
-                <Github className="w-5 h-5" />
-                Source code
+                <Icons.star className="w-5 h-5" />
+                Star this project
               </Link>
             </Button>
           </div>
 
           <div>
-            <h3 className="border-b dark:border-b-zinc-700">latest blog posts</h3>
+            <h3 className="border-b dark:border-b-zinc-700">Latest Blog Posts</h3>
             <div className="mt-2">
 
 
             </div>
               <ul className="list-inside list-disc">
-                <li>
-                  <Link href="/" target="_blank" className="font-medium text-blue-600 hover:text-blue-800">
-                    welcome to my first blog
-                  </Link>
-                </li>
+                {
+                  posts.map(post => (
+                    <div key={post.slug} className="flex justify-between items-center">
+                      <div>
+                        <div className="flex items-center gap-2">
+                          <Link 
+                            href="/" 
+                            className="font-medium text-[17px] text-blue-600 hover:text-blue-800">
+                            {post.frontmatter.title}
+                          </Link>
+                          <div className="flex gap-0.5">
+                              {
+                                post.frontmatter.tags.map(tag => (
+                                  <Link 
+                                    href={`/tags/${tag}`} 
+                                    key={tag}
+                                  >
+                                    <Badge variant="outline" className="rounded-xl">{tag}</Badge>
+                                  </Link>
+                                ))
+                              }
+                          </div>
+                        </div> 
+                        <p className="text-sm">{post.frontmatter.description}</p>
+                      </div>
+                      <p className="text-xs">{post.frontmatter.date}</p>
+                    </div>
+                  ))
+                }
               </ul>
           </div>
         </div>
