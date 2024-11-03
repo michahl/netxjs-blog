@@ -18,7 +18,9 @@ export default function Home() {
           {/* heading */}
           <Header />
           
+          
           <div className="my-8">
+            <h1 className="font-semibold">Michail Christoforatos</h1>
             <p>
               Nextjs starter template for next blog or personal website. Built with:
             </p>
@@ -48,7 +50,7 @@ export default function Home() {
                       <div>
                         <div className="flex items-center gap-2">
                           <Link 
-                            href="/" 
+                            href={`/post/${post.slug}`}
                             className="font-medium text-[17px] text-blue-600 hover:text-blue-800">
                             {post.frontmatter.title}
                           </Link>

@@ -28,7 +28,7 @@ export default function Header() {
                     <ModeToggle />
                 </div>
             </div>
-            <h1 className="font-medium">Michail Christoforatos</h1>
+            
         </div>
     )
 }
