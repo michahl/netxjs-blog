@@ -28,7 +28,7 @@ export default function Home() {
               <li>Shadcn/ui</li>
             </ul>
             <Button className="my-1.5">
-              <Link href="/" target="_blank" className="flex items-center justify-center gap-1 font-medium">
+              <Link href="https://github.com/michahl/netxjs-blog" target="_blank" className="flex items-center justify-center gap-1 font-medium">
                 <Icons.star className="w-5 h-5" />
                 Star this project
               </Link>
