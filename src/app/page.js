@@ -1,6 +1,4 @@
-import Menu from "@/components/menu";
 import { Button } from "@/components/ui/button";
-import { Github, Twitter } from "lucide-react";
 import Link from "next/link";
 import { getAllPosts } from "@/lib/posts";
 import Header from "@/components/header";
@@ -20,7 +18,7 @@ export default function Home() {
           
           
           <div className="my-8">
-            <h1 className="font-semibold">Michail Christoforatos</h1>
+            <h1 className="font-semibold mb-5">Michail Christoforatos</h1>
             <p>
               Nextjs starter template for next blog or personal website. Built with:
             </p>
@@ -39,41 +37,26 @@ export default function Home() {
 
           <div>
             <h3 className="border-b dark:border-b-zinc-700">Latest Blog Posts</h3>
-            <div className="mt-2">
-
-
-            </div>
-              <ul className="list-inside list-disc">
-                {
-                  posts.map(post => (
-                    <div key={post.slug} className="flex justify-between items-center">
-                      <div>
-                        <div className="flex items-center gap-2">
-                          <Link 
-                            href={`/post/${post.slug}`}
-                            className="font-medium text-[17px] text-blue-600 hover:text-blue-800">
-                            {post.frontmatter.title}
-                          </Link>
-                          <div className="flex gap-0.5">
-                              {
-                                post.frontmatter.tags.map(tag => (
-                                  <Link 
-                                    href={`/tags/${tag}`} 
-                                    key={tag}
-                                  >
-                                    <Badge variant="outline" className="rounded-xl">{tag}</Badge>
-                                  </Link>
-                                ))
-                              }
-                          </div>
-                        </div> 
-                        <p className="text-sm">{post.frontmatter.description}</p>
-                      </div>
-                      <p className="text-xs">{post.frontmatter.date}</p>
+            <div className="mt-5 grid grid-cols-2 gap-2">
+              {
+                posts.map(post => (
+                  <div key={post.slug} className="flex flex-col justify-between pt-5">
+                    <div>
+                      <h3>{post.frontmatter.title}</h3>
+                      <p className="text-sm">{post.frontmatter.description}</p>
                     </div>
-                  ))
-                }
-              </ul>
+
+                    <Link 
+                      href={`/post/${post.slug}`}
+                      className="mt-10 text-sm flex items-center gap-1"
+                    >
+                      Read more
+                      <Icons.arrow_right className="w-4 h-4"/>
+                    </Link>
+                  </div>
+                )) 
+              }
+            </div>
           </div>
         </div>
 
