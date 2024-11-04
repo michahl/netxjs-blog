@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Icons } from "./icons";
 import { ModeToggle } from "./modetoggle";
 
 export default function Header() {
@@ -14,7 +13,7 @@ export default function Header() {
                         Home
                     </Link>
                     <Link
-                        href="/blogs"
+                        href="/posts"
                         className="text-sm text-zinc-700/80 hover:text-zinc-700 dark:text-zinc-200/90 dark:hover:text-zinc-200"
                     >
                         Blogs
