@@ -12,7 +12,7 @@ export default function Tags() {
                     <Header />
         
                     <div className="mt-10">
-                        <h3 className="text-lg font-semibold">Topics I've written about</h3>
+                        <h3 className="text-lg font-semibold">Topics I&#39;ve written about</h3>
                     </div>
                     <div className="flex flex-wrap gap-2 mt-5">
                     {
