@@ -17,7 +17,7 @@ export default function Posts() {
                     <div className="my-10">
                     <h3 className="border-b text-lg font-semibold dark:border-b-zinc-700">Recent posts</h3>
 
-                    <div className="mt-5 grid grid-cols-1 gap-2">
+                    <div className="mt-5 grid grid-cols-1 gap-7">
                         {
                             posts.map( post => (
                                 <div className="flex flex-col" key={post.slug}>
