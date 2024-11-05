@@ -40,20 +40,22 @@ export default function Home() {
             <div className="mt-5 grid grid-cols-2 gap-2">
               {
                 posts.map(post => (
-                  <div key={post.slug} className="flex flex-col justify-between pt-5">
+                  <Link 
+                    key={post.slug} 
+                    href={`/post/${post.slug}`}
+                    className="flex flex-col justify-between pt-5 border rounded-xl p-3 dark:border-zinc-200/20 hover:shadow-sm hover:border-zinc-300 hover:dark:border-zinc-200/40 cursor-pointer transition-colors ease-in-out group">
                     <div>
-                      <h3>{post.frontmatter.title}</h3>
+                      <h3 className="font-semibold">{post.frontmatter.title}</h3>
                       <p className="text-sm">{post.frontmatter.description}</p>
                     </div>
 
-                    <Link 
-                      href={`/post/${post.slug}`}
-                      className="mt-10 text-sm flex items-center gap-1"
+                    <div
+                      className="mt-10 text-sm flex items-center gap-1 text-zinc-700/80 group-hover:text-zinc-800 dark:text-zinc-400 dark:group-hover:text-zinc-200"
                     >
                       Read more
                       <Icons.arrow_right className="w-4 h-4"/>
-                    </Link>
-                  </div>
+                    </div>
+                  </Link>
                 )) 
               }
             </div>
