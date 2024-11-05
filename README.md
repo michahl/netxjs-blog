@@ -1,5 +1,7 @@
 # MDX Blog build w NextJs, Tailwindcss
 
+![preview](https://nextjs-mdx-blog-template.vercel.app/preview.jpeg)
+
 ## Description
 This is a blog website built with Next.js and Tailwind CSS. It serves as a template for creating a modern, responsive, and SEO-friendly blog.
 
